@@ -1,0 +1,310 @@
+/* CSS for body */
+body{
+    background-color: #ddd;
+}
+
+/* CSS for top navigation bar */
+.topnav {
+    position: fixed; /* Sets the position of the element to fixed, which fixes it relative to the viewport, so it remains in the same position even when the page is scrolled */ 
+    text-align: center;
+    width: 100%;
+    background-color: #fff; 
+}
+
+/* CSS for navigation list */
+.nav {
+    display: inline; /* Sets the element to display as an inline-level element, allowing it to flow with surrounding content and not force line breaks */
+    padding: 0;  
+}
+
+/* CSS for list items */
+.nav li {
+    display: inline-block; /* Combines the features of both inline and block elements, allowing the element to flow with surrounding content while also respecting height, width, padding, and margins */
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* CSS for navigation links */
+.nav li a {
+    text-decoration: none; /*This line of CSS removes the default underline from links*/
+    text-align: center;
+    font-size: 2.5vh;
+    color:#6D6E7A;
+    font-family: "Noto Sans Display", sans-serif;
+}
+
+/* Hover effect for navigation items */
+.nav li:hover,
+.nav li:hover a {
+    background-color: #176d92;
+    color: #fff;
+}
+.signature{
+  background-color: silver;
+}
+/* CSS for centering */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    padding-top: 5%;
+    background-attachment:fixed;
+    display: inline-block;
+    width: 20%;
+}
+.work{
+    text-align: center;
+}
+
+/* CSS for h1 */
+h1 {
+    color: coral;
+    font-family: sans-serif;
+}
+hr.new1 {
+    border-top: 1px solid rgb(86, 86, 86);
+  }
+/* CSS for title */
+.title  {
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+/* CSS for effect */
+.effect {
+    width: 100%;
+}
+
+/* CSS for h2 */
+.effect h2 {
+    color: aquamarine;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+/* CSS for buttons */
+.effect .buttons {
+    padding: 15px 15px;
+    display: flex; /* Setting display property to flex for flexible layout */
+    justify-content: center;
+}
+
+/* CSS for anchor links */
+.effect a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px solid #b7b5b5;
+    margin-right: 20px;
+    font-size: 3vh;
+    overflow: hidden;
+    position: relative;    
+}
+
+/* CSS for icons */
+.effect a i {
+    position: relative;
+    z-index: 3;
+}
+
+/* CSS for specific social media icons */
+.effect .fb {
+    background-color: #fff;
+}
+
+.effect .in {
+    background-color: #fff;
+}
+
+.effect .git {
+    background-color: #fff;
+}
+
+/* CSS for aeneas effect */
+.effect.aeneas a {
+    transition: transform 0.4s linear 0s,  /* Applying a transition effect to the transform property */
+    border-top-left-radius 0.1s linear 0s, /* Applying a transition effect to the border-top-left-radius property */
+    border-top-right-radius 0.1s linear 0.1s, /* Applying a transition effect to the border-top-right-radius property */
+    border-bottom-right-radius 0.1s linear 0.2s, /* Applying a transition effect to the border-bottom-right-radius property */
+    border-bottom-left-radius 0.1s linear 0.3s; /* Applying a transition effect to the border-bottom-left-radius property */
+}
+
+.effect.aeneas a i {
+    transition: transform 0.4s linear 0s; /* Applying a transition effect to the transform property */
+}
+
+.effect.aeneas a:hover {
+    transform: rotate(360deg); /* Rotates the element by 360 degrees */
+    border-radius: 50%;
+}
+
+.effect.aeneas a:hover i {
+    transform: rotate(-360deg); /* Rotates the element by -360 degrees */
+}
+.work{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden; /* Hides overflowing content within the element */
+    padding:10px 5px;
+    word-break:normal; /* Breaks lines only at allowed break points */
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-0lax{
+    text-align:center;
+    vertical-align:center;
+}
+.table-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+table {
+    /* Optional: Add styling to your table */
+    border-collapse: collapse;
+    border: 1px solid #ccc; /* Example border */
+}
+
+.box{
+    padding: 20px 20px 20px 40px;
+    margin-right: 20px;
+    transition: box-shadow .3s;
+    width: 20%;
+    border-radius:10px;
+    background: #fff;
+    float: left;
+
+    
+}
+/* Box hover effect */
+.box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,1); /* Box shadow on hover */
+    transition: box-shadow 1s;
+}
+
+/* Styles for the outer unordered list */
+.box ul {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Styles for list items */
+.box li {
+    list-style-type: square; /* Square list style */
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Styles for nested unordered lists */
+.box ul ul {
+    margin-left: 20px; /* Indentation for nested lists */
+}
+
+/* Styles for nested list items */
+.box ul ul li {
+    list-style-type: circle; /* Circle list style for nested lists */
+    margin-bottom: 5px; /* Add space between nested list items */
+}
+
+.container {
+    margin-bottom: 20px; /* Add margin bottom */
+}
+
+.title {
+    font-weight: bold; /* Bold font weight */
+    padding-bottom: 15px; /* Add padding bottom */
+}
+
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+
+/* Wrapper styles */
+.wrapper {
+    position: relative; /* Relative positioning */
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Background image styles */
+.backg {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    filter: grayscale(100%); /* Convert image to black and white */
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+/* Foreground image styles */
+.foreg {
+    position: absolute; /* Absolute positioning */
+    top: 67%; /* Position from top */
+    left: 50%; /* Position from left */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: 20%; /* Width */
+    height: auto; /* Auto height */
+    filter: grayscale(100%); /* Convert image to black and white */
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+/* Image color restoration on hover */
+.wrapper:hover .backg,
+.wrapper:hover .foreg {
+    filter: grayscale(0%); /* Restore image color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #9ebcc9; /* Background color */
+    color: rgb(1, 1, 1); /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Padding */
+    bottom: 0; /* Position at bottom */
+    width: 100%; /* Full width */
+}
+
+/* Fieldset styles */
+fieldset {
+    text-align: center; /* Center-align text */
+}
+
+/* Legend styles */
+legend {
+    text-align: center; /* Center-align text */
+    color: black; /* Text color */
+    padding: 5px 10px; /* Padding */
+}
+
+/* Input styles */
+input {
+    margin: 5px; /* Margin */
+}
